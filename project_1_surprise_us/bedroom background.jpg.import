@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bc0v3efjm6ieq"
-path="res://.godot/imported/high school background.jpeg-7c9f50d140eb534b6a50636f98dfd4d3.ctex"
+uid="uid://bf5fyi3ytmmue"
+path="res://.godot/imported/bedroom background.jpg-816eaa7b73b9f1ee8d3e28766349ec9e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://high school background.jpeg"
-dest_files=["res://.godot/imported/high school background.jpeg-7c9f50d140eb534b6a50636f98dfd4d3.ctex"]
+source_file="res://bedroom background.jpg"
+dest_files=["res://.godot/imported/bedroom background.jpg-816eaa7b73b9f1ee8d3e28766349ec9e.ctex"]
 
 [params]
 

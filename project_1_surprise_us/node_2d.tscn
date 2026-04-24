@@ -1,14 +1,21 @@
 [gd_scene format=3 uid="uid://e5abimhre7hy"]
 
-[ext_resource type="Texture2D" uid="uid://bc0v3efjm6ieq" path="res://high school background.jpeg" id="1_wtcfe"]
+[ext_resource type="Texture2D" uid="uid://bf5fyi3ytmmue" path="res://bedroom background.jpg" id="1_0e48y"]
+[ext_resource type="Script" uid="uid://cb54s5x4q8p0a" path="res://Narrivive.gd" id="2_epypp"]
 
-[node name="Node2D" type="Node2D" unique_id=1363566090]
+[node name="Main" type="Node2D" unique_id=1363566090]
 
-[node name="HighSchoolBackground" type="Sprite2D" parent="." unique_id=611929685]
-position = Vector2(576, 323)
-scale = Vector2(3.3236995, 2.4210525)
-texture = ExtResource("1_wtcfe")
+[node name="BedroomBackground" type="Sprite2D" parent="." unique_id=814390468]
+position = Vector2(572, 322.00003)
+scale = Vector2(0.6411111, 0.63573545)
+texture = ExtResource("1_0e48y")
 
-[node name="Label" type="Label" parent="HighSchoolBackground" unique_id=1113326687]
-offset_right = 40.0
-offset_bottom = 23.0
+[node name="Label" type="Label" parent="." unique_id=446204041]
+offset_left = -2.0
+offset_top = 511.0
+offset_right = 1148.0
+offset_bottom = 646.0
+theme_override_colors/font_color = Color(0.012617188, 0.012617188, 0.012617188, 1)
+theme_override_font_sizes/font_size = 40
+structured_text_bidi_override_options = ["Creator: My friend is bored and hungry.", "Can you help useing the popular pizza app and help her order a pizza?", "You have 5 seconds to pick your options.", "Thank you so much "]
+script = ExtResource("2_epypp")
