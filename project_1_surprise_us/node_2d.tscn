@@ -1,21 +1,68 @@
 [gd_scene format=3 uid="uid://e5abimhre7hy"]
 
-[ext_resource type="Texture2D" uid="uid://bf5fyi3ytmmue" path="res://bedroom background.jpg" id="1_0e48y"]
-[ext_resource type="Script" uid="uid://cb54s5x4q8p0a" path="res://Narrivive.gd" id="2_epypp"]
+[ext_resource type="Script" uid="uid://denf8bt28uo1o" path="res://Black script.gd" id="1_0e48y"]
+[ext_resource type="Texture2D" uid="uid://cik6cn8k2kicl" path="res://black background.jpeg" id="2_epypp"]
 
-[node name="Main" type="Node2D" unique_id=1363566090]
+[node name="Main" type="Control" unique_id=238685146]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_0e48y")
 
-[node name="BedroomBackground" type="Sprite2D" parent="." unique_id=814390468]
-position = Vector2(572, 322.00003)
-scale = Vector2(0.6411111, 0.63573545)
-texture = ExtResource("1_0e48y")
+[node name="BlackBackground" type="Sprite2D" parent="." unique_id=1124399612]
+position = Vector2(577, 326.99997)
+scale = Vector2(5.2752295, 4.3918915)
+texture = ExtResource("2_epypp")
 
-[node name="Label" type="Label" parent="." unique_id=446204041]
-offset_left = -2.0
-offset_top = 511.0
-offset_right = 1148.0
-offset_bottom = 646.0
-theme_override_colors/font_color = Color(0.012617188, 0.012617188, 0.012617188, 1)
-theme_override_font_sizes/font_size = 40
-structured_text_bidi_override_options = ["Creator: My friend is bored and hungry.", "Can you help useing the popular pizza app and help her order a pizza?", "You have 5 seconds to pick your options.", "Thank you so much "]
-script = ExtResource("2_epypp")
+[node name="Control" type="Control" parent="." unique_id=1063667367]
+anchors_preset = 0
+offset_left = -3.0
+offset_top = 6.0
+offset_right = 58.0
+offset_bottom = 57.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control" unique_id=1758832826]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 470.0
+offset_right = 1153.0
+offset_bottom = 642.0
+theme_override_font_sizes/normal_font_size = 28
+
+[node name="YesButton" type="Button" parent="." unique_id=1737277214]
+layout_mode = 0
+offset_left = 191.0
+offset_top = 331.0
+offset_right = 355.0
+offset_bottom = 419.0
+text = "YES"
+
+[node name="ContinueButton" type="Button" parent="." unique_id=1178109031]
+layout_mode = 0
+offset_left = 977.0
+offset_top = 8.0
+offset_right = 1141.0
+offset_bottom = 96.0
+text = "Continue"
+
+[node name="NoButton" type="Button" parent="." unique_id=210759591]
+layout_mode = 0
+offset_left = 785.0
+offset_top = 336.0
+offset_right = 949.0
+offset_bottom = 424.0
+text = "NO"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=358466988]
+physics_interpolation_mode = 1
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=681169169]
+offset_left = 6.0
+offset_top = 1.0
+offset_right = 1156.0
+offset_bottom = 654.0
+mouse_filter = 2
+color = Color(1, 1, 1, 0.1254902)
+
+[connection signal="pressed" from="YesButton" to="." method="_on_yes_button_pressed"]
+[connection signal="pressed" from="ContinueButton" to="." method="_on_continue_button_pressed"]
+[connection signal="pressed" from="NoButton" to="." method="_on_no_button_pressed"]
