@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://denf8bt28uo1o" path="res://Black script.gd" id="1_0e48y"]
 [ext_resource type="Texture2D" uid="uid://cik6cn8k2kicl" path="res://black background.jpeg" id="2_epypp"]
+[ext_resource type="AudioStream" uid="uid://nbkwuvh6yuqd" path="res://Undertale Ost_ The Fallen Child.mp3" id="3_epypp"]
 
 [node name="Main" type="Control" unique_id=238685146]
 layout_mode = 3
@@ -67,6 +68,7 @@ color = Color(1, 1, 1, 0.1254902)
 wait_time = 1.5
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1739527822]
+stream = ExtResource("3_epypp")
 
 [connection signal="pressed" from="YesButton" to="." method="_on_yes_button_pressed"]
 [connection signal="pressed" from="ContinueButton" to="." method="_on_continue_button_pressed"]

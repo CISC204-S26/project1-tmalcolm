@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://nbkwuvh6yuqd"
+path="res://.godot/imported/Undertale Ost_ The Fallen Child.mp3-fe348140ec01faf7fa796ce059b5b0db.mp3str"
+
+[deps]
+
+source_file="res://Undertale Ost_ The Fallen Child.mp3"
+dest_files=["res://.godot/imported/Undertale Ost_ The Fallen Child.mp3-fe348140ec01faf7fa796ce059b5b0db.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

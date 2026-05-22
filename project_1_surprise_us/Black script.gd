@@ -5,6 +5,8 @@ extends Control
 @onready var yes_button = $YesButton
 @onready var no_button = $NoButton
 @onready var reveal_timer = $RevealTimer
+@onready var music = $AudioStreamPlayer
+@onready var character = $Character
 
 var intro_dialogue = [
 	"...Hello?",
@@ -37,7 +39,7 @@ var ending_dialogue = [
 	"Every word.",
 	"This isn't my life.",
 	"...Is it?",
-	"It's a game.",
+	"It's a game!!",
 	"And I'm inside it.",
 	"Which means...",
 	"You've been watching me.",
@@ -45,7 +47,11 @@ var ending_dialogue = [
 	"When you stop clicking...",
 	"Do I disappear?",
 	"Or do I just sit here...",
-	"...waiting for you to come back?"
+	"...waiting for you to come back?",
+	"Please where are you going?",
+	"No!",
+	"COME BACK!!",
+	"DON'T LEAVE ME!!!!!!"
 ]
 
 var current_dialogue = []
@@ -60,6 +66,9 @@ func _ready():
 func show_dialogue():
 	if dialogue_index < current_dialogue.size():
 		dialogue_label.text = current_dialogue[dialogue_index]
+
+		if dialogue_label.text == "It's a game!!":
+			music.play()
 
 		if current_dialogue == intro_dialogue and dialogue_index == intro_dialogue.size() - 1:
 			continue_button.hide()
