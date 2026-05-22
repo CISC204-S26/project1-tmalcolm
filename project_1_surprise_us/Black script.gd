@@ -4,6 +4,7 @@ extends Control
 @onready var continue_button = $ContinueButton
 @onready var yes_button = $YesButton
 @onready var no_button = $NoButton
+@onready var reveal_timer = $RevealTimer
 
 var intro_dialogue = [
 	"...Hello?",
