@@ -1,5 +1,6 @@
 extends Control
 
+
 @onready var character = $Character
 @onready var dialogue_label = $Control/RichTextLabel
 @onready var continue_button = $ContinueButton
@@ -122,6 +123,8 @@ func show_dialogue():
 
 		if line == "It's a game!!":
 			music.play()
+			
+
 
 		if current_dialogue == intro_dialogue and dialogue_index == intro_dialogue.size() - 1:
 			continue_button.hide()
@@ -133,7 +136,6 @@ func show_dialogue():
 		continue_button.hide()
 		yes_button.hide()
 		no_button.hide()
-		
 func reset_faces():
 	character.get_node("Normal").show()
 	character.get_node("Nervous").show()
